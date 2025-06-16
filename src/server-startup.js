@@ -287,7 +287,7 @@ export class ServerStartup {
 
         if (useIPv6) {
             try {
-                await createFunc(this.cliArgs.getIPv6ListenUrl(), 6);
+                await createFunc('0.0.0.0:8000', 4);
             } catch (error) {
                 console.error('Warning: failed to start server on IPv6');
                 console.error(error);
