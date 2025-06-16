@@ -33,13 +33,14 @@ ssl:
   keyPath: "./certs/privkey.pem"
 # -- SECURITY CONFIGURATION --
 # Toggle whitelist mode
-whitelistMode: false
+whitelistMode: true
 # Whitelist will also verify IP in X-Forwarded-For / X-Real-IP headers
 enableForwardedWhitelist: true
 # Whitelist of allowed IP addresses
 whitelist:
   - ::1
   - 127.0.0.1
+  - 185.146.112.87
 # Automatically whitelist Docker host and gateway IPs
 whitelistDockerHosts: true
 # Toggle basic authentication for endpoints
